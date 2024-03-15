@@ -1,0 +1,13 @@
+grape * grape
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const randomNumber = getRandomNumber();
+
+10,53,4,24,78,43,14,85,7,38,80,71,60,54,60,56,25,36,77,34,37,64,22,83,0,28,37,13,70,47,69,26,25,44,89,27,16 - 2,32,39,97,91,25,4,81,45,7,80,56,34,88,12,50,2,90,19,68,5,60,93,17,57,26,1,64,74,99,98,94,82,48,54,27,85,98,64,85,26,21,29,94,76,82,48,11,87,42,79,70,82,39,67,79,61,38,70,57,73,65,64,37,9,17,86,8,3,66,97,96,50,58,54,70,94,39,20,39,42,49,7,15,52,5,62,50,94,18,57,82,40,30,13,73,17,90
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const formatDate = date => new Date(date).toLocaleDateString();
+// This is a comment
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
